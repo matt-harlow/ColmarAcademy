@@ -61,9 +61,10 @@ nav.mobile{
 	display: flex;
 	align-items: center;
 	background-color: #eeeeee;
+	width: 100%;
 }
 
-.image {
+.banner .image {
 	width: 60%;
 	padding: 2rem 1.5rem;
 }
@@ -72,6 +73,11 @@ nav.mobile{
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.banner-copy {
+	width: 40%;
+	padding-right: 1.5rem;
 }
 
 .banner-copy h1 {
@@ -112,7 +118,7 @@ nav.mobile{
 
 .info-right {
 	width: 40%;
-	padding: 2rem 0;
+	padding: 2rem 1.5rem 2rem 0;
 }
 
 .info-small {
@@ -130,13 +136,80 @@ nav.mobile{
 	width: 65%;
 }
 
-.info h2, p {
+.info h2 {
+	padding-bottom: 0.5rem;
+}
+
+.info p {
 	padding-bottom: 0.5rem;
 }
 
 .link {
 	color: blue;
 }
+
+/*Classes*/
+
+.learn {
+	max-width: 100%;
+	padding: 2rem 4.5rem; 
+	background-color: #eeeeee;
+}
+
+.learn h1 {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.classes {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.class {
+	background-color: white;
+	width: 30%;
+	margin-bottom: 2rem;
+	margin-right: 2rem;
+}
+
+.class .image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+.class .image img {
+/*	height: auto;*/
+}
+
+.class-info {
+	padding: 16px 16px 24px 16px;
+}
+
+.class h2 {
+	padding-bottom: 0.5rem;
+}
+
+.course {
+	padding-bottom: 0.5rem;
+}
+
+/*Thesis*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
