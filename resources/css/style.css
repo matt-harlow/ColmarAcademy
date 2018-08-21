@@ -55,6 +55,22 @@ nav.mobile{
 	display: none;
 }
 
+@media only screen and (max-width: 640px) {
+	.logo {
+		display: none;
+	}
+
+	nav.desktop {
+		display: none;
+	}
+
+	nav.mobile {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
 /*Banner*/
 
 .banner {
@@ -69,10 +85,8 @@ nav.mobile{
 	padding: 2rem 1.5rem;
 }
 
-.image img {
-	display: block;
+.banner .image img {
 	width: 100%;
-	height: auto;
 }
 
 .banner-copy {
@@ -81,7 +95,7 @@ nav.mobile{
 }
 
 .banner-copy h1 {
-	padding-bottom: 1.5rem;
+	padding-bottom: 2rem;
 }
 
 .banner-copy h2 {
@@ -93,6 +107,23 @@ nav.mobile{
 	color: white;
 	padding: 0.5rem 0;
 	text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+	.banner {
+		flex-direction: column;
+	}
+
+	.banner .image {
+		width: 100%;
+		padding: 0;
+	}
+
+	.banner-copy {
+	width: 100%;
+	padding: 2rem 1rem;
+	box-sizing: border-box;
+}
 }
 
 /*Information*/
@@ -124,12 +155,21 @@ nav.mobile{
 .info-small {
 	display: flex;
 	align-items: center;
+	padding: 1rem;
+}
+
+#guest {
+	background-color: #eeeeee;
+}
+
+.top:nth-child(1) {
+	padding-top: 0;
 }
 
 .info-small img {
 	width: 35%;
 	height: auto;
-	padding: 1rem;
+	padding-right: 1rem;
 }
 
 .info {
@@ -174,9 +214,19 @@ nav.mobile{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/*margin-bottom: 2rem;
+	margin-right: 2rem;*/
+}
+
+.class:nth-child(n+1) {
 	margin-bottom: 2rem;
+}
+
+.class:nth-child(2), .class:nth-child(5) {
+	margin-left: 2rem;
 	margin-right: 2rem;
 }
+
 
 .class .image {
 	display: flex;
@@ -185,8 +235,13 @@ nav.mobile{
 	height: auto;
 }
 
+.class .image img {
+	display: block;
+	width: 100%;
+}
+
 .class-info {
-	padding: 16px 16px 24px 16px;
+	padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .class h2 {
@@ -233,16 +288,25 @@ nav.mobile{
 .thesis-small {
 	display: flex;
 	align-items: center;
+	padding: 1rem;
+}
+
+#fisma {
+	background-color: #eeeeee;
 }
 
 .thesis-small img {
 	width: 35%;
 	height: auto;
-	padding: 1rem;
+	padding-right: 1rem;
 }
 
 .thesis-info {
 	width: 65%;
+}
+
+.thesis-info h2 {
+	padding-bottom: .05rem;
 }
 
 /*Footer*/
