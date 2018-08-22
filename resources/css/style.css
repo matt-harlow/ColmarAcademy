@@ -152,6 +152,10 @@ nav.mobile{
 	padding: 2rem 1.5rem 2rem 0;
 }
 
+.mobile-image {
+	display: none;
+}
+
 .info-small {
 	display: flex;
 	align-items: center;
@@ -188,6 +192,49 @@ nav.mobile{
 	color: blue;
 }
 
+@media only screen and (max-width: 640px) {
+	.info-left {
+		display: none;
+	}
+
+	.info-right {
+		width: 100%;
+		padding: 1rem 1rem 2rem 1rem;
+	}
+
+	.info-small {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin-bottom: 4rem;
+	}
+
+	.desktop-image {
+		display: none;
+	}
+
+	.mobile-image {
+		display: block;
+	}
+
+	.info-small img {
+		width: 100%;
+		height: auto;
+		padding-right: 0;
+	}
+
+	.info {
+		width: 100%;
+		padding: 1rem 1rem 0 1rem;
+	}
+
+	#guest {
+		background-color: white;
+		margin-bottom: 0;
+	}
+}
+
 /*Classes*/
 
 .learn {
@@ -201,7 +248,7 @@ nav.mobile{
 	padding-bottom: 2rem;
 }
 
-.classes {
+.classes-desktop {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -214,8 +261,6 @@ nav.mobile{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*margin-bottom: 2rem;
-	margin-right: 2rem;*/
 }
 
 .class:nth-child(n+1) {
@@ -233,6 +278,7 @@ nav.mobile{
 	justify-content: center;
 	align-items: center;
 	height: auto;
+	width: 100%;
 }
 
 .class .image img {
@@ -250,6 +296,52 @@ nav.mobile{
 
 .course {
 	padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 640px) {
+	.learn {
+		max-width: 100%;
+		padding: 2rem 1rem; 
+		background-color: white;
+	}
+
+	.classes-desktop {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	.class {
+		background-color: #eeeeee;
+		width: 100%;
+		align-items: flex-start;
+		padding: 1rem;
+  	}
+
+  	.class h2 {
+  		padding-bottom: 0;
+  	}
+
+  	.class .image {
+  		display: none;
+  	}
+
+  	.class-info {
+  		padding: 0;
+  	}
+
+  	.class-info p {
+  		display: none;
+  	}
+
+  	.class:nth-child(n+1) {
+		margin-bottom: 0;
+	}
+
+	.class:nth-child(2), .class:nth-child(5) {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 /*Thesis*/
@@ -309,6 +401,34 @@ nav.mobile{
 	padding-bottom: .05rem;
 }
 
+@media only screen and (max-width: 640px) {
+	.thesis {
+		max-width: 100%;
+		padding: 2rem 0 1.5rem 0;
+	}
+
+	.thesis h1 {
+		padding-bottom: 1rem;
+	}
+
+	.thesis-right {
+		display: none;
+	}
+
+	.thesis-left {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.thesis-left video {
+		padding-bottom: 0;
+	}
+
+	.thesis-left h2, .thesis-left p {
+		display: none;
+	}
+}
+
 /*Footer*/
 
 footer {
@@ -332,6 +452,20 @@ footer ul {
 
 footer ul li {
 	padding-left: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+	footer {
+		border-top: 0;
+	}
+
+	.foot {
+		padding: 1rem 1rem;
+	}
+
+	footer ul {
+		display: none;
+	}
 }
 
 
