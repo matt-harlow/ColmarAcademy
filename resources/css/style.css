@@ -55,6 +55,19 @@ nav.mobile{
 	display: none;
 }
 
+.name {
+	font-size: 1.5rem;
+}
+
+.colmar {
+	font-weight: bold;
+}
+
+.academy {
+	color: #757575;
+	font-weight: lighter;
+}
+
 @media only screen and (max-width: 640px) {
 	.logo {
 		display: none;
@@ -316,6 +329,7 @@ nav.mobile{
 		width: 100%;
 		align-items: flex-start;
 		padding: 1rem;
+		box-sizing: border-box;
   	}
 
   	.class h2 {
@@ -335,6 +349,10 @@ nav.mobile{
   	}
 
   	.class:nth-child(n+1) {
+		margin-bottom: 0.5rem;
+	}
+
+	.class:nth-child(6) {
 		margin-bottom: 0;
 	}
 
@@ -467,17 +485,5 @@ footer ul li {
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
