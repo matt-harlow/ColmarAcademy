@@ -1,13 +1,14 @@
 /*Universal*/
 
 html {
-	font-family: Helvetica, Sans-serif;
+	font-family: Roboto, Sans-serif;
 	font-size: 16px;
 }
 
 h1 {
+	font-family: Montserrat, Sans-serif; 
 	font-size: 2rem;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h2 {
@@ -103,11 +104,12 @@ nav.mobile{
 }
 
 .banner-copy {
-	width: 40%;
-	padding-right: 1.5rem;
+	width: 30%;
+	margin-right: 1.5rem;
 }
 
 .banner-copy h1 {
+	font-size: 3rem;
 	padding-bottom: 2rem;
 }
 
@@ -133,10 +135,11 @@ nav.mobile{
 	}
 
 	.banner-copy {
-	width: 100%;
-	padding: 2rem 1rem;
-	box-sizing: border-box;
-}
+		width: 100%;
+		padding: 2rem 1rem;
+		margin-right: 0;
+		box-sizing: border-box;
+	}
 }
 
 /*Information*/
@@ -452,7 +455,7 @@ nav.mobile{
 footer {
 	position: relative;
 	top: 4rem;
-	border-top: 1px solid black;
+	border-top: 1px solid #eeeeee;
 }
 
 .foot {
